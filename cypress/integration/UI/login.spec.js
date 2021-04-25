@@ -1,6 +1,6 @@
 import user from "../../fixtures/userInfo.json"
 
-describe('Sign in test with correct and incorrect credentials', ()=>{
+describe('Sign in test with different credentials', ()=>{
     beforeEach(()=>{
         cy.visit('/')
     })
@@ -13,7 +13,7 @@ describe('Sign in test with correct and incorrect credentials', ()=>{
         cy.get('#login-button').click()
         cy.get('.error-message-container').contains('Epic sadface:')
     })
-    it('sign in attempt fails with wrong password',()=>{
+    it.only('sign in attempt fails with wrong password',()=>{
         cy.get('#user-name').type(user.name)
         cy.get('#password').type(user.wrongPassword)
         cy.get('#login-button').click()
