@@ -2,5 +2,8 @@
     "name" : "performance_glitch_user",
     "password" : "secret_sauce",
     "wrongName" : "wrongName",
-    "wrongPassword" : "wrongPassword"
+    "wrongPassword" : "wrongPassword",
+    "firstName" : "jo",
+    "lastName" : "blo",
+    "postCode" : 1212
 }
